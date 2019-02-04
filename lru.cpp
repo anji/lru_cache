@@ -1,5 +1,5 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <list>
 
 using namespace std;
@@ -9,7 +9,7 @@ using namespace std;
 class LRU_cache {
 private:
     int size;
-    map<int, pair<int, list<int>::iterator> > KVmap;
+    unordered_map<int, pair<int, list<int>::iterator> > KVmap;
     list<int> key;
 
 public:
